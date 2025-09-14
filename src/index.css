@@ -1,0 +1,7 @@
+@import '../style.css';
+/* You can import/replace this with your own CSS */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
