@@ -23,6 +23,10 @@ app.put('/api/notes/:id', (req, res) => {
   if (!updated) return res.status(404).json({ message: 'Not found' });
   res.json(updated);
 });
+app.post('/register-tenant', (req, res) => {
+  // handle tenant registration here
+  res.json({ message: "tenant registered" });
+});
 app.delete('/api/notes/:id', (req, res) => {
   const { id } = req.params;
   const prev = notes.length;
